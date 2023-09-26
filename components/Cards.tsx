@@ -1,5 +1,8 @@
 import { Fox } from "@/Data/species";
-function Card({fox}):JSX.Element {
+interface CardProps {
+    fox: Fox;
+  }
+function Card({fox}:CardProps):JSX.Element {
     return(
         <section className="w-full bg-slate-300 rounded-lg shadow-sm shadow-slate-600 mb-3 p-3">
             <h3 className="font-bold text-lg">{fox.nombre}</h3>
